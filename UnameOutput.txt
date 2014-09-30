@@ -1,0 +1,6 @@
+System name: Darwin
+Host name: GlavinBook-Pro.local
+OS Release: 13.3.0
+OS Version: Darwin Kernel Version 13.3.0: Tue Jun  3 21:27:35 PDT 2014; root:xnu-2422.110.17~1/RELEASE_X86_64
+CPU Type: x86_64
+
