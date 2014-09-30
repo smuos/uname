@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     uname(&ubuffer);
 
     printf("System name: %s\nHost name: %s\nOS Release: %s\nOS Version: %s\nCPU Type: %s\n", 
-    		ubuffer.sysname, ubuffer.nodename, ubuffer.release, ubuffer.version, ubuffer.machine);
+            ubuffer.sysname, ubuffer.nodename, ubuffer.release, ubuffer.version, ubuffer.machine);
 
     return 0;
 }
