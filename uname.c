@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]) {
 
-    //struct UNAME_STRUCT ubuffer;
+	//struct for system info.
 	struct utsname ubuffer;
 
     // Check for proper usage
@@ -15,13 +15,8 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "%s: Aborting, not enough arguments.\n", argv[0]);
         return (-1);
     }
-	
 
-	//
-	/*if ((&ubuffer = malloc(sizeof(UNAME_STRUCT))) == NULL) {
-        fprintf(stderr, "%s: Could not allocate memory.\n", argv[0]);
-    }
-	*/
+	//this function is the same as linux command "uname"
     if( uname(&ubuffer) ==0 )
 	{
 		printf("System name: %s\n", ubuffer.sysname);
