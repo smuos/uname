@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 
     // Check for proper usage
     if (argc != 1) {
-        fprintf(stderr, "%s: Aborting, not enough arguments.\n", argv[0]);
+        fprintf(stderr, "%s: Aborting, too many arguments.\n", argv[0]);
         return (-1);
     }
 
