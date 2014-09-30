@@ -1,10 +1,10 @@
 #!/bin/bash
 
-gcc -Wall $1 -o testUname
+gcc -Wall $1 -o testUname.exe
 
 
 
-diff --brief <(./testUname) UnameOutput.log >/dev/null
+diff --brief <(./testUname.exe) UnameOutput.log >/dev/null
 comp_value=$?  #Look at diff exit status
 
 if [ $comp_value -eq 1 ]
