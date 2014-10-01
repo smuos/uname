@@ -2,10 +2,12 @@
 #This script takes a single parameter, the path to your uname.c code.
 #Note that compiling will fail if any warnings are present.
 
+
 #Define message output types
 TEST="$(tput setaf 4)TEST:$(tput sgr 0)"
 ERROR="$(tput setaf 1)ERROR:$(tput sgr 0)"
 SUCCESS="$(tput setaf 2)SUCCESS:$(tput sgr 0)"
+
 
 
 #Check command line arguments
@@ -42,6 +44,7 @@ echo "${TEST} Here is the output of your code, $1:"
 #Compare output of code to generated test data
 diff --brief testUnameOutput.txt systemUnameOutput.txt >/dev/null
 comp_value=$?  #save diff exit status
+
 
 #Evaluate if code passes or fails.
 if [ $comp_value -eq 1 ]

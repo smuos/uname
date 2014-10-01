@@ -1,5 +1,41 @@
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# System files
+.DS_Store
+
+# Task Specific Files
 testUnameOutput.txt
 systemUnameOutput.txt
 testUname
 
 
+>>>>>>> a1edee22889291deb9d4ec234cf98f38d81d4baa
