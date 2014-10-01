@@ -14,10 +14,15 @@ int main(int argc, char *argv[]) {
         return (-1);
     }
 
-    uname(&ubuffer);
-
-    printf("System name: %s\nHost name: %s\nOS Release: %s\nOS Version: %s\nCPU Type: %s\n", 
+    int rc = uname(&ubuffer);
+    
+    // If uname was successful print system information
+    if (rc == 0) {
+        printf("System name: %s\nHost name: %s\nOS Release: %s\nOS Version: %s\nCPU Type: %s\n", 
             ubuffer.sysname, ubuffer.nodename, ubuffer.release, ubuffer.version, ubuffer.machine);
+        fflush(stdout);
+    } 
+    else return 1;
 
     return 0;
 }
