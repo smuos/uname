@@ -1,3 +1,4 @@
+
 # Object files
 *.o
 *.ko
@@ -30,3 +31,11 @@
 
 # System files
 .DS_Store
+
+# Task Specific Files
+testUnameOutput.txt
+systemUnameOutput.txt
+testUname
+
+
+>>>>>>> a1edee22889291deb9d4ec234cf98f38d81d4baa
