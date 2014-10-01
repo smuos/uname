@@ -21,7 +21,6 @@ int main(int argc, char *argv[]) {
     printf("OS Release: %s\n", ubuffer.release);
     printf("OS Version: %s\n", ubuffer.version);
     printf("CPU Type: %s\n", ubuffer.machine);
-    printf("\n");
 
     /*
     System name: Linux
