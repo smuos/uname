@@ -1,3 +1,5 @@
+// tested successfully with the script test.sh to match output
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
