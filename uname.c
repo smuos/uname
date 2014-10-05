@@ -4,7 +4,7 @@
 #include <string.h>
 #include <sys/utsname.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]){
 
         struct utsname ubuffer;
 
@@ -18,9 +18,9 @@ int main(int argc, char *argv[]) {
 
     printf("System name: %s\n", ubuffer.sysname);
     printf("Host name: %s\n", ubuffer.nodename);
-    printf("OS Release: %s\n"ubuffer.release);
-    printf("OS Version: %s\n"ubuffer.version);
-    printf("CPU Type: %s\n"ubuffer.machine);
+    printf("OS Release: %s\n", ubuffer.release);
+    printf("OS Version: %s\n", ubuffer.version);
+    printf("CPU Type: %s\n", ubuffer.machine);
 
     return 0;
 }
