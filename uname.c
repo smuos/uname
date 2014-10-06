@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-
+#include<sys/utsname.h>
 int main(int argc, char *argv[]) {
-
-        struct UNAME_STRUCT ubuffer;
+        //struct buffer
+        struct utsname  ubuffer;
 
     // Check for proper usage
     if (argc != 1) {
@@ -16,6 +16,13 @@ int main(int argc, char *argv[]) {
     uname(&ubuffer);
 
     printf("System name: %s\n", ubuffer.sysname);
-
+    //print the host name
+    printf("Host name: %s\n",ubuffer.nodename);
+   //print the OS release
+    printf("OS Release: %s\n", ubuffer.release);
+   // print the OS version
+    printf("OS Version: %s\n", ubuffer.version);
+    //print the cpu 
+    printf("CPU Type: %s\n", ubuffer.machine);
     return 0;
 }
