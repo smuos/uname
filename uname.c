@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <sys/utsname.h>
+#include <sys/utsname.h> // Header required to access the library functions
 #include <unistd.h>
 #include <string.h>
-
 
 int main(int argc, char *argv[]) {
 
@@ -16,13 +15,14 @@ int main(int argc, char *argv[]) {
 
     int val = uname(&ubuffer);
     
-    if(val == 0) {
+    if(val == 0) { //Error Checking. Print the following if uname is 0
         printf("System name: %s\n", ubuffer.sysname);
         printf("Host name: %s\n", ubuffer.nodename);
         printf("OS Release: %s\n", ubuffer.release);
         printf("OS Version: %s\n", ubuffer.version);
         printf("CPU Type: %s\n", ubuffer.machine);
     }
-    return 0;
-
+    
+    return 0; //exit
+    
 }
